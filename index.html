@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The book hospital</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Croissant+One&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Aquí empieza el header -->
+    <header class="container">
+        <div class="header_menu">
+            <a href="index.html"><img class="header_logo" src="../imagenes/Logo.svg"
+                    alt="Logo de The book hospital"></a>
+            <button class="menu-toggle" aria-label="Abrir menú de navegación">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav>
+                <ul class="header_lista">
+                    <li><a class="header_lista_enlaces" href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a class="header_lista_enlaces" href="que-hacemos.html">Qué hacemos</a></li>
+                    <li><a class="header_lista_enlaces" href="donde-actuamos.html">Dónde actuamos</a></li>
+                    <li><a class="header_lista_enlaces" href="voluntariado.html">Voluntariado</a></li>
+                    <li><a class="header_lista_enlaces" href="hazte-socio.html">Hazte socio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Aquí termina el header -->
+
+    <!-- Aquí empieza el hero, está fuera del main para que sea full -->
+    <section class="hero">
+        <div class="hero_contenedor">
+            <h1 class="hero_titulo">the book hospital</h1>
+            <p class="hero_texto">Revivimos palabras que el polvo quiso olvidar</p>
+            <!-- Aquí empieza el CTA -->
+            <a class="hero_cta" href="voluntariado.html">Colabora con nosotros</a>
+            <!-- Aquí termina el CTA -->
+        </div>
+    </section>
+    <!--  Aquí termina el hero -->
+
+    <!-- Aquí empieza el main -->
+    <main class="container">
+
+        <!-- Aquí empeza la sección de noticias -->
+        <section class="noticias">
+            <h2 class="noticias_encabezado">Noticias</h2>
+            <div class="noticias_contenido">
+                <article class="noticia_card">
+                    <div class="noticias_card_texto">
+                        <img class="noticias_img" src="../imagenes/1noticia.webp" alt="Imagen de libros restaurados">
+                        <h3 class="noticias_titulos">¡Más de 10.000 libros restaurados!</h3>
+                        <p class="noticias_textos">Récord Histórico: ¡Gracias a tu apoyo hemos superado los 10.000
+                            libros restaurados!</p>
+                    </div>
+                    <div class="noticias_card_enlaces">
+                        <a class="noticias_enlaces" href="noticia1.html">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="noticia_card">
+                    <div class="noticias_card_texto">
+                        <img class="noticias_img" src="../imagenes/2noticia.webp" alt="Imagen de libros restaurados">
+                        <h3 class="noticias_titulos">Logramos salvar una historia de 1950</h3>
+                        <p class="noticias_textos">La historia que creíamos perdida ahora está a salvo. Conoce el
+                            increíble rescate de esta joya literaria</p>
+                    </div>
+                    <div class="noticias_card_enlaces">
+                        <a class="noticias_enlaces" href="noticia2.html">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="noticia_card">
+                    <div class="noticias_card_texto">
+                        <img class="noticias_img" src="../imagenes/3noticia.webp" alt="Imagen de la feria del libro">
+                        <h3 class="noticias_titulos">Nuestra presencia en la feria del libro</h3>
+                        <p class="noticias_textos">¡Un éxito rotundo! Te contamos cómo fue nuestra participación y el
+                            apoyo que recibimos en la Feria del Libro.</p>
+                    </div>
+                    <div class="noticias_card_enlaces">
+                        <a class="noticias_enlaces" href="noticia3.html">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="noticia_card">
+                    <div class="noticias_card_texto">
+                        <img class="noticias_img" src="../imagenes/4noticia.webp" alt="Imagen de libros olvidados">
+                        <h3 class="noticias_titulos">Diez libros que tenías olvidados</h3>
+                        <p class="noticias_textos">Regreso a los Clásicos ¡Te invitamos a redescubrir estos tesoros!</p>
+                    </div>
+                    <div class="noticias_card_enlaces">
+                        <a class="noticias_enlaces" href="noticia4.html">Leer más</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--  Aquí termina la sección de noticias -->
+
+
+        <!-- Aquí empieza al sección de testimonios -->
+        <section class="testimonios">
+            <h2 class="testimonios_encabezado">Testimonios</h2>
+            <div class="testimonios_contenido">
+                <article class="testimonios_card">
+                    <div class="testimonios_card_img">
+                        <img class="testimonios_img" src="../imagenes/testimonio1.webp"
+                            alt="Imagen de la casa del libro">
+                    </div>
+                    <div>
+                        <div class="testimonios_card_textos">
+                            <h3 class="testimonios_titulos">Casa del libro</h3>
+                            <p class="testimonios_textos">Cuidar un libro antiguo es preservar una parte de nuestra
+                                memoria cultural.</p>
+                        </div>
+                        <div class="testimonios_card_enlaces">
+                            <a class="testimonios_enlaces" href="#">Leer más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonios_card">
+                    <div class="testimonios_card_img">
+                        <img class="testimonios_img" src="../imagenes/testimonio2.webp" alt="Imagen de Arantxa Rufo">
+                    </div>
+                    <div>
+                        <div class="testimonios_card_textos">
+                            <h3 class="testimonios_titulos">Arantxa Rufo</h3>
+                            <p class="testimonios_textos">Es mágico ver cómo un texto olvidado vuelve a tener sentido
+                                para alguien.</p>
+                        </div>
+                        <div class="testimonios_card_enlaces">
+                            <a class="testimonios_enlaces" href="#">Leer más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonios_card">
+                    <div class="testimonios_card_img">
+                        <img class="testimonios_img" src="../imagenes/testimonio3.webp"
+                            alt="Imagen de Gregorio Hernández Jiménez">
+                    </div>
+                    <div>
+                        <div class="testimonios_card_textos">
+                            <h3 class="testimonios_titulos">Javier Castillo</h3>
+                            <p class="testimonios_textos">Me encanta dar una segunda vida a historias que casi
+                                desaparecen.</p>
+                        </div>
+                        <div class="testimonios_card_enlaces">
+                            <a class="testimonios_enlaces" href="#">Leer más</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonios_card">
+                    <div class="testimonios_card_img">
+                        <img class="testimonios_img" src="../imagenes/testimonio4.webp" alt="Imagen de Rut Nieves">
+                    </div>
+                    <div>
+                        <div class="testimonios_card_textos">
+                            <h3 class="testimonios_titulos">Rut Nieves</h3>
+                            <p class="testimonios_textos">Reescribir relatos perdidos me conecta con autores que merecen
+                                ser leídos.</p>
+                        </div>
+                        <div class="testimonios_card_enlaces">
+                            <a class="testimonios_enlaces" href="#">Leer más</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Aquí termina la sección de testimonios -->
+
+
+        <!-- Aquí empieza el formulario -->
+        <section class="formulario">
+            <form class="formulario_contenido">
+                <div class="formulario_card_izquierda">
+                    <h2 class="formulario_titulo">Contacta con nosotros</h2>
+                    <p class="formulario_texto">Tú puedes ser quien salve una historia del silencio.</p>
+                </div>
+                <fieldset class="formulario_card">
+                    <div class="formulario_datos">
+                        <label for="name"> Datos personales:</label>
+                        <input class="formulario_input_cajas" type="text" name="name" id="name" placeholder="Nombre"
+                            required>
+                        <input class="formulario_input_cajas" type="text" name="lastname" placeholder="Apellidos"
+                            required>
+                        <input class="formulario_input_cajas" type="number" max="100" min="18" placeholder="Edad"
+                            required>
+                        <!-- El mínimo de edad para colaborar es de 18 años, por ello el min en la casilla de edad -->
+                    </div>
+                    <div class="formulario_correo">
+                        <p>Correo electrónico: <input class="formulario_input_cajas" type="email" name="email" required>
+                        </p>
+                    </div>
+                    <div class="formulario_datos_del_libro">
+
+                        <p>Propósito: <input type="radio" id="Registro-historia" name="Propósito"
+                                value="Solicitar el registro de una historia" required>
+                            <label for="Solicitar el registro de una historia">Registrar un libro</label>
+
+                            <input type="radio" id="Registrar-autopublicacion" name="Propósito"
+                                value="Registrar mí autopublicación" required>
+                            <label for="Registrar mí autopublicación">Registrar mí autopublicación</label>
+
+                            <input type="radio" id="Restaurar-libro" name="Propósito" value="Restaurar un libro"
+                                required>
+                            <label for="Restaurar un libro">Restaurar un libro</label>
+                        </p>
+
+                        <br>
+
+                        <input class="formulario_input_cajas" type="text" placeholder="Título" required>
+                        <br>
+                        <input class="formulario_input_cajas" type="text" placeholder="Autor" required>
+                        <br>
+                        <input class="formulario_input_cajas" type="text" placeholder="Comentarios" maxlength="200"
+                            size="50">
+
+                    </div>
+                    <input class="formulario_input_enviar" type="submit" value="Enviar">
+
+                </fieldset>
+            </form>
+        </section>
+        <!-- Aquí termina el formulario -->
+    </main>
+    <!-- Aquí termina el main -->
+
+    <hr class="separador">
+
+    <!-- Aquí empieza el footer -->
+    <footer class="container">
+
+        <section class="footer">
+            <div class="footer_contenido">
+                <div class="footer_copyright">
+                    <p>© 2025 The book hospital. Todos los derechos reservados.</p>
+                    <img class="footer_logo" src="../imagenes/Logo.svg" alt="Logo de The book hospital">
+                </div>
+                <div class="footer_card">
+                    <div>
+                        <ul class="footer_redessociales">
+                            <li class="footer_redessociales_lista"><a class="footer_enlaces" href="#"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="footer_redessociales_lista"><a class="footer_enlaces" href="#"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="footer_redessociales_lista"><a class="footer_enlaces" href="#"><i
+                                        class="fa-brands fa-x-twitter"></i></a></li>
+                            <li class="footer_redessociales_lista"><a class="footer_enlaces" href="#"><i
+                                        class="fa-brands fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="footer_avisolegal">
+                            <li class="footer_avisolegal_lista"><a class="footer_enlaces" href="aviso-legal.html">Aviso
+                                    legal</a></li>
+                            <li class="footer_avisolegal_lista"><a class="footer_enlaces"
+                                    href="politica-de-privacidad.html">Política de privacidad</a></li>
+                            <li class="footer_avisolegal_lista"><a class="footer_enlaces"
+                                    href="politica-de-cookies.html">Política de Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Aquí termina el footer -->
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.header_lista');
+        const menuIcon = toggleButton.querySelector('i');
+
+        toggleButton.addEventListener('click', function() {
+            // Alterna la clase 'open' en la lista de enlaces
+            navList.classList.toggle('open');
+
+            // Alterna el icono entre hamburguesa y X
+            if (navList.classList.contains('open')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark'); // Icono de cerrar (X)
+            } else {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars'); // Icono de hamburguesa
+            }
+
+            // Opcional: Cierra el menú al hacer clic en un enlace (útil para Single Page Apps)
+            const navLinks = navList.querySelectorAll('.header_lista_enlaces');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navList.classList.remove('open');
+                    menuIcon.classList.remove('fa-xmark');
+                    menuIcon.classList.add('fa-bars');
+                });
+            });
+
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    color: var(--colortexto);
+    background-color: var(--colorbackground);
+    /* Sticky footer */
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;} /* Sticky footer */
+
+/*Tipografía títulos*/
+.bona-nova-sc-regular {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Tipogafía textos */
+.montserrat-alternates{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+/*Definir el ancho del contenedor*/
+.container{
+    width: 80%; /*DICHO EN AULES*/
+    max-width: 1200px; /*DICHO EN AULES*/
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Definir los colores*/
+:root{
+    --colortexto: #59351f;
+    --colortítulos: #59351f;
+    --colorfondo: #e5e0d3;
+    --colorbackground:rgb(243, 238, 224);
+    --colorcta: rgb(89, 53, 31);
+    --colorctahover: #f3eee0;
+    --colorenlaces:rgb(89, 53, 31);
+    --colorenlaceshover:rgba(89, 53, 31, 0.686);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    color: var(--colortexto);
+    background-color: var(--colorbackground);
+    /* Sticky footer */
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;} /* Sticky footer */
+
+/*Tipografía títulos*/
+.bona-nova-sc-regular {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Tipogafía textos */
+.montserrat-alternates{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+/*Definir el ancho del contenedor*/
+.container{
+    width: 80%; /*DICHO EN AULES*/
+    max-width: 1200px; /*DICHO EN AULES*/
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Definir los colores*/
+:root{
+    --colortexto: #59351f;
+    --colortítulos: #59351f;
+    --colorfondo: #e5e0d3;
+    --colorbackground:rgb(243, 238, 224);
+    --colorcta: rgb(89, 53, 31);
+    --colorctahover: #f3eee0;
+    --colorenlaces:rgb(89, 53, 31);
+    --colorenlaceshover:rgba(89, 53, 31, 0.686);
+}
+
+
+
+
+
+
+/*Estilo header*/
+.header_menu{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header_toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--colorenlaces);
+}
+
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 2rem; /* Icono un poco más grande */
+    cursor: pointer;
+    color: var(--colorenlaces);
+}
+
+.header_logo{
+    display: block;
+    height: 50px;
+}
+
+/*Estilos enlaces header*/
+.header_lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.header_lista_enlaces{
+    color: var(--colorenlaces);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header_lista_enlaces:hover{
+    color: var(--colorenlaceshover);
+}
+
+
+
+
+
+
+/*Estilo hero*/
+.hero{
+    height: 900px;
+    background-image: url('../imagenes/1fotoeditada.webp');
+    background-size: cover;
+    background-position: center;
+    margin: 0 -20px;
+}
+
+.hero_contenedor{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--colorfondo);
+}
+
+.hero_titulo{
+    font-size: 3.3rem;
+    color: white;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+}
+
+.hero_texto{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.hero_cta{
+    width: 200px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    background: var(--colorbackground);
+    color: var(--colorcta);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.hero_cta:hover{
+    color: var(--colorctahover);
+    background-color: var(--colorcta);
+}
+
+
+
+
+/*Estilos noticias*/
+.noticias{
+    margin-top: 30px;
+}
+
+.noticias_encabezado{
+    font-family: "Bona Nova SC", serif;
+    margin: 20px 0px;
+}
+
+.noticias_contenido{
+    display: flex;
+
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.noticia_card{
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.noticias_img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.noticias_titulos{
+    text-align: left;
+    margin: 10px;
+    color: var(--colortítulos);
+    font-size: 1.19rem;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 550;
+   
+}
+
+.noticias_card_texto{
+    height: 340px;
+}
+
+.noticias_textos{
+    margin: 10px;
+    text-align: left;
+    color: var(--colortexto);
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-bottom: 20px;
+}
+
+.noticias_card_enlaces{
+    display: flex;
+    margin: 10px;
+}
+
+.noticias_enlaces{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaces);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.noticias_enlaces:hover{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaceshover);
+}
+
+
+
+
+
+/*Estilos testimonios*/
+.testimonios{
+    margin-top: 40px;
+}
+
+.testimonios_encabezado{
+    font-family: "Bona Nova SC", serif;
+    margin: 20px 0px;
+}
+
+.testimonios_contenido{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.testimonios_card{
+    border-radius: 5%;
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    background-color: var(--colorfondo);
+}
+
+.testimonios_card_img{
+    height: 200px;
+    align-content: center;
+    margin: 10px;
+}
+
+.testimonios_img{
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.testimonios_titulos{
+    color: var(--colortítulos);
+    font-size: 1rem;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 550;
+}
+
+.testimonios_card_textos{
+    height:140px ;
+    margin:10px 10px;
+}
+
+.testimonios_textos{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--colortexto);
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.testimonios_card_enlaces{
+    display: flex;
+    margin: 0px 0 0 10px;
+}
+
+.testimonios_enlaces{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaces);
+    text-decoration: none;
+    padding: 7px;
+}
+
+.testimonios_enlaces:hover{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaceshover);
+}
+
+
+
+
+/* Estilos formulario */
+.formulario{
+    margin-top: 40px;
+    background-color: var(--colorfondo);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.formulario_contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario_card_izquierda{
+    width: 40%;
+    align-content: center;
+}
+
+.formulario_titulo{
+    margin: 20px 0px 10px;
+    color: var(--colortítulos);
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+}
+
+.formulario_texto{
+    text-align: center;
+    margin: 20px
+}
+
+.formulario_card{
+    width: 70%;
+    border: none;
+}
+
+.formulario_input_cajas{
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 10rem;
+}
+
+.formulario_datos{
+    margin: 20px 10px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.formulario_correo{
+    margin: 20px 10px;
+    border: var(--colortexto);
+}
+
+.formulario_datos_del_libro{
+    margin: 5px 10px;
+}
+
+.formulario_input_enviar{
+    margin: 10px;
+    width: 100px;
+    color: var(--colorbackground);
+    background-color: var(--colorenlaces);
+    border: none;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.formulario_input_enviar:hover{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaceshover);
+}
+
+
+
+
+
+/* Estilo separador */
+.separador{
+    margin-top: 20px;
+    
+}
+
+/* Estilos footer */
+.footer{
+   margin: 20px 0;
+   
+}
+
+.footer_contenido{
+    list-style: none;
+    gap: 5rem;
+    display: flex;
+   justify-content: space-between;
+}
+
+.footer_copyright{
+    font-size: 10px;
+    width: 50%;
+}
+
+.footer_logo{
+    display: block;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.footer_card{
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer_redessociales{
+    margin-top: 20px;
+    width: 100%;
+   display: flex;
+   gap: 1rem;
+}
+
+.footer_redessociales_lista{
+    list-style: none;
+}
+
+.footer_avisolegal{
+    margin-top: 20px;
+    width: 100%;
+   display: flex;
+   gap: 1rem;
+   font-size: 10px;
+}
+
+.footer_avisolegal_lista{
+    list-style: none;
+    text-align: left;
+}
+
+.footer_enlaces{
+    text-decoration: none;
+    color: var(--colorenlaces);
+     font-weight: 600;
+}
+
+.footer_enlaces:hover{
+    color: var(--colorenlaceshover);
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilos principales para móviles */
+@media screen and (max-width: 767px) { 
+
+    .header_toggle {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+
+    .header_lista {
+        display: none; /* Oculto por defecto */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px; /* Ajusta según la altura de tu header */
+        left: 0;
+        background-color: var(--colorfondo); /* Usa un color de fondo para que se vea */
+        padding: 1rem 0;
+        z-index: 100;
+        text-align: center;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .header_lista.open {
+        display: flex;
+    }
+
+    .header_lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        background-color: var(--colorfondo);
+        padding: 1rem 0;
+        z-index: 100;
+        text-align: center;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .header_lista.active {
+        display: flex;
+    }
+
+    .hero{
+        height: 800px;
+        background-image: url('../imagenes/1fotoeditada.webp');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero_titulo{
+        font-size: 2.3rem;
+        color: white;
+        font-family: "Bona Nova SC", serif;
+        font-weight: 400;
+    }
+
+    .hero_texto{
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    .noticias_contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    }
+
+    .testimonios_contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    }
+
+    .formulario_contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .formulario_card_izquierda{
+    width: 90%;
+    align-content: center;
+}
+
+    .formulario_datos{
+    margin: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    }
+
+    .footer_contenido{
+        list-style: none;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .footer_card{
+        width: 50%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
