@@ -1,0 +1,688 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    color: var(--colortexto);
+    background-color: var(--colorbackground);
+    /* Sticky footer */
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;} /* Sticky footer */
+
+/*Tipografía títulos*/
+.bona-nova-sc-regular {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Tipogafía textos */
+.montserrat-alternates{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+/*Definir el ancho del contenedor*/
+.container{
+    width: 80%; /*DICHO EN AULES*/
+    max-width: 1200px; /*DICHO EN AULES*/
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Definir los colores*/
+:root{
+    --colortexto: #59351f;
+    --colortítulos: #59351f;
+    --colorfondo: #e5e0d3;
+    --colorbackground:rgb(243, 238, 224);
+    --colorcta: rgb(89, 53, 31);
+    --colorctahover: #f3eee0;
+    --colorenlaces:rgb(89, 53, 31);
+    --colorenlaceshover:rgba(89, 53, 31, 0.686);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html{
+    font-size: 1rem;
+    height: 100%;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    color: var(--colortexto);
+    background-color: var(--colorbackground);
+    /* Sticky footer */
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;} /* Sticky footer */
+
+/*Tipografía títulos*/
+.bona-nova-sc-regular {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* Tipogafía textos */
+.montserrat-alternates{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+/*Definir el ancho del contenedor*/
+.container{
+    width: 80%; /*DICHO EN AULES*/
+    max-width: 1200px; /*DICHO EN AULES*/
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Definir los colores*/
+:root{
+    --colortexto: #59351f;
+    --colortítulos: #59351f;
+    --colorfondo: #e5e0d3;
+    --colorbackground:rgb(243, 238, 224);
+    --colorcta: rgb(89, 53, 31);
+    --colorctahover: #f3eee0;
+    --colorenlaces:rgb(89, 53, 31);
+    --colorenlaceshover:rgba(89, 53, 31, 0.686);
+}
+
+
+
+
+
+
+/*Estilo header*/
+.header__menu{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.header__logo{
+    display: block;
+    height: 50px;
+}
+
+/* 1. Ocultar el checkbox completamente */
+.menu-checkbox {
+    display: none;
+}
+
+/* 2. Estilo del botón (Label) - Oculto por defecto en escritorio */
+.menu-toggle {
+    display: none; 
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--colorenlaces);
+    position: absolute; /* Para que esté siempre arriba en móvil */
+    right: 20px;
+}
+
+/* Ocultar el ícono de cerrar por defecto */
+.menu-icon-close {
+    display: none;
+}
+
+/*Estilos enlaces header*/
+.header__lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.header__lista__enlaces{
+    color: var(--colorenlaces);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header__lista__enlaces:hover{
+    color: var(--colorenlaceshover);
+}
+
+
+
+
+
+
+/*Estilo hero*/
+.hero{
+    height: 900px;
+    background-image: url("imagenes/1fotoeditada.webp");
+    background-size: cover;
+    background-position: center;
+    margin: 0 -20px;
+}
+
+.hero__contenedor{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--colorfondo);
+}
+
+.hero__titulo{
+    font-size: 3.3rem;
+    color: white;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+}
+
+.hero__texto{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.hero__cta{
+    width: 200px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    background: var(--colorbackground);
+    color: var(--colorcta);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.hero__cta:hover{
+    color: var(--colorctahover);
+    background-color: var(--colorcta);
+}
+
+
+
+
+/*Estilos noticias*/
+.noticias{
+    margin-top: 30px;
+}
+
+.noticias__encabezado{
+    font-family: "Bona Nova SC", serif;
+    margin: 20px 0px;
+}
+
+.noticias__contenido{
+    display: flex;
+
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.noticia__card{
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.noticias__img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.noticias__titulos{
+    text-align: left;
+    margin: 10px;
+    color: var(--colortítulos);
+    font-size: 1.19rem;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 550;
+   
+}
+
+.noticias__card__texto{
+    height: 340px;
+}
+
+.noticias__textos{
+    margin: 10px;
+    text-align: left;
+    color: var(--colortexto);
+    font-family: "Montserrat Alternates", sans-serif;
+    margin-bottom: 20px;
+}
+
+.noticias__card__enlaces{
+    display: flex;
+    margin: 10px;
+}
+
+.noticias__enlaces{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaces);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.noticias__enlaces:hover{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaceshover);
+}
+
+
+
+
+
+/*Estilos testimonios*/
+.testimonios{
+    margin-top: 40px;
+}
+
+.testimonios__encabezado{
+    font-family: "Bona Nova SC", serif;
+    margin: 20px 0px;
+}
+
+.testimonios__contenido{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.testimonios__card{
+    border-radius: 5%;
+    overflow: hidden;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    background-color: var(--colorfondo);
+}
+
+.testimonios__card__img{
+    height: 200px;
+    align-content: center;
+    margin: 10px;
+}
+
+.testimonios__img{
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.testimonios__titulos{
+    color: var(--colortítulos);
+    font-size: 1rem;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 550;
+}
+
+.testimonios__card__textos{
+    height:140px ;
+    margin:10px 10px;
+}
+
+.testimonios__textos{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--colortexto);
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.testimonios__card__enlaces{
+    display: flex;
+    margin: 0px 0 0 10px;
+}
+
+.testimonios__enlaces{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaces);
+    text-decoration: none;
+    padding: 7px;
+}
+
+.testimonios__enlaces:hover{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaceshover);
+}
+
+
+
+
+/* Estilos formulario */
+.formulario{
+    margin-top: 40px;
+    background-color: var(--colorfondo);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.formulario__contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario__card__izquierda{
+    width: 40%;
+    align-content: center;
+}
+
+.formulario__titulo{
+    margin: 20px 0px 10px;
+    color: var(--colortítulos);
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+}
+
+.formulario__texto{
+    text-align: center;
+    margin: 20px
+}
+
+.formulario__card{
+    width: 70%;
+    border: none;
+}
+
+.formulario__input__cajas{
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 10rem;
+}
+
+.formulario__datos{
+    margin: 20px 10px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.formulario__correo{
+    margin: 20px 10px;
+    border: var(--colortexto);
+}
+
+.formulario__datos__del__libro{
+    margin: 5px 10px;
+}
+
+.formulario__input__enviar{
+    margin: 10px;
+    width: 100px;
+    color: var(--colorbackground);
+    background-color: var(--colorenlaces);
+    border: none;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.formulario__input__enviar:hover{
+    color: var(--colorbackground);
+    background-color: var(--colorenlaceshover);
+}
+
+
+
+
+
+/* Estilo separador */
+.separador{
+    margin-top: 20px;
+    
+}
+
+/* Estilos footer */
+.footer{
+   margin: 20px 0;
+   
+}
+
+.footer__contenido{
+    list-style: none;
+    gap: 5rem;
+    display: flex;
+   justify-content: space-between;
+}
+
+.footer__copyright{
+    font-size: 10px;
+    width: 50%;
+}
+
+.footer__logo{
+    display: block;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.footer__card{
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer__redessociales{
+    margin-top: 20px;
+    width: 100%;
+   display: flex;
+   gap: 1rem;
+}
+
+.footer__redessociales__lista{
+    list-style: none;
+}
+
+.footer__avisolegal{
+    margin-top: 20px;
+    width: 100%;
+   display: flex;
+   gap: 1rem;
+   font-size: 10px;
+}
+
+.footer__avisolegal__lista{
+    list-style: none;
+    text-align: left;
+}
+
+.footer__enlaces{
+    text-decoration: none;
+    color: var(--colorenlaces);
+     font-weight: 600;
+}
+
+.footer__enlaces:hover{
+    color: var(--colorenlaceshover);
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilos principales para móviles */
+@media screen and (max-width: 767px) { 
+
+    /* 1. Anular o ajustar el padding del contenedor general */
+    .container {
+        width: 90%; /* Usar un ancho fijo en lugar de 80% puede ayudar */
+        padding: 0 20px; /* <--- IMPORTANTE: Eliminar el padding lateral fijo de 20px */
+    }
+    
+    /* 1. Mostrar el botón (label) en móviles IA*/
+    .menu-toggle {
+        display: block; 
+    }
+
+    /* 3. FUNCIONALIDAD PURA CSS: Cuando el checkbox esté marcado, muestra el menú */
+    .menu-checkbox:checked ~ nav .header__lista {
+        display: flex;
+    }
+
+    /* 4. FUNCIONALIDAD PURA CSS: Cuando el checkbox esté marcado, cambia el ícono */
+    .menu-checkbox:checked ~ .menu-toggle .menu-icon-open {
+        display: none;
+    }
+
+    .menu-checkbox:checked ~ .menu-toggle .menu-icon-close {
+        display: block;
+    }
+
+    .header__lista {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100px; 
+        left: 0;
+        background-color: var(--colorfondo);
+        padding: 1rem 0;
+        z-index: 100;
+        text-align: center;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .hero{
+        margin: 0;
+        height: 800px;
+        background-image: url("imagenes/1fotoeditada.webp");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero__titulo{
+        font-size: 2.3rem;
+        color: white;
+        font-family: "Bona Nova SC", serif;
+        font-weight: 400;
+    }
+
+    .hero__texto{
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    .noticias__contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    }
+
+    .noticia__card{
+    overflow: hidden;
+    width: 100%;
+    height: 420px;
+    }
+
+    .noticias__card__texto{
+    height: 360px;
+    }
+
+    .testimonios__contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    }
+
+    .formulario__contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .formulario__card__izquierda{
+    width: 90%;
+    align-content: center;
+}
+
+    .formulario__datos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    }
+
+    /* 1. Asegurar que .formulario_card ocupe todo el ancho en móvil */
+    .formulario__card {
+        width: 90%; /* Ajustamos al mismo ancho que la izquierda para centrar */
+        /* También puedes usar 100%, pero el 90% hace juego con .formulario_card_izquierda */
+    }
+    
+    /* 2. Hacer que los inputs ocupen todo el ancho de su contenedor en móvil */
+    .formulario__input__cajas {
+        width: 100%; /* ¡Importante! Anula el ancho fijo de 10rem del escritorio */
+    }
+    
+    /* 3. Asegurar que los contenedores de datos y correo sean 100% */
+    .formulario__datos,
+    .formulario__correo,
+    .formulario__datos__del__libro {
+        width: 100%;
+        margin: 10px 0; /* Ajustamos márgenes para que no se desborden */
+        padding: 0 10px; /* Agregamos padding interno si es necesario */
+    }
+
+    .footer__contenido{
+        list-style: none;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .footer__card{
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
